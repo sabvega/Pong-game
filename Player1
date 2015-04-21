@@ -1,0 +1,26 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class rightPaddle here.
+ * 
+ * @author (Sabrina Vega) 
+ * @version (9/26/14)
+ */
+public class Player1 extends Paddle
+{
+    /**
+     * Act - do whatever the rightPaddle wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public void act() 
+    {
+        if (Greenfoot.isKeyDown("w")) //up movement
+        {
+            setLocation(getX(), getY()-13);
+        }
+        if (Greenfoot.isKeyDown("s")) //down movement
+        {
+            setLocation(getX(), getY()+13);
+        } //the 5 is describing how many pixels it will move like how fast it will move
+    }    
+}
