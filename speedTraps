@@ -1,0 +1,30 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.awt.Color;
+
+/**
+ * Write a description of class speedTrap here.
+ * 
+ * @author (Sabrina Vega) 
+ * @version (9/26/14)
+ */
+public class speedTraps extends Actor
+{
+    public speedTraps()
+    {
+        GreenfootImage img= new GreenfootImage(40,40);
+        img.drawRect(0,0,40,40);
+        img.setColor(Color.BLUE);
+        img.fillRect(0,0,40,40);
+        setImage(img);
+        
+    
+    
+    }
+    
+    
+    
+    
+      
+    
+    
+}
