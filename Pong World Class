@@ -1,0 +1,40 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.awt.Color;
+/**
+ * Write a description of class PongWorld here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class PongWorld extends World
+{
+    
+    /**
+     * Constructor for objects of class PongWorld.
+     * 
+     */
+    public PongWorld()
+    {    
+        //originally was 600x400 now change to 800x600
+        super(650, 500, 1); 
+        GreenfootImage background= getBackground();
+        background.setColor(Color.CYAN);
+        background.fill();
+        
+        
+        //scoreboards
+        Scoreboard scoreboard= new Scoreboard("Player 1", "Player 2");
+        addObject(scoreboard, 325, 50);
+        
+        //Instructions
+        
+        
+        //actors
+        addObject(new Player1(), 10, 250);
+        addObject(new Player2(), 640, 250);
+        addObject(new Ball(scoreboard), 325, 250);
+        addObject(new fastTrap(), 325, 100);
+        addObject(new slowTrap(), 325, 400);        
+    }
+    
+}
